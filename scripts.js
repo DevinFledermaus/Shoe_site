@@ -15,9 +15,9 @@ AOS.init();
 $(document).ready(function () {
   //   Initialize product slider and set options
   $("#product-slider").owlCarousel({
-    items: 1,
-    margin: 0,
-    stagePadding: 200,
+    items: 3,
+    margin: 50,
+    stagePadding: 0,
     loop: true,
     dots: false,
     //   autoplay: true,
@@ -46,6 +46,7 @@ fetch(randomUserURL)
     users.forEach((user) => {
       testimonialContainer.innerHTML += `
                 <div class="testimonial">
+                <i class="fas fa-quote-left"></i>
                     <q class="testimonial-message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</q>
                     <img class="testimonial-img" src="${user.picture.large}" alt="${user.name.first} ${user.name.last}">
                     <h4 class="testimonial-name">${user.name.first} ${user.name.last}</h4>
@@ -56,6 +57,6 @@ fetch(randomUserURL)
     $("#testimonial-slider").owlCarousel({
       loop: true,
       autoplay: true,
-      margin: 30,
+      margin: 0,
     });
   });

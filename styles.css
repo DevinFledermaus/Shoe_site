@@ -146,7 +146,7 @@ p {
   flex-direction: column;
 }
 .images {
-  height: 40%;
+  height: 50%;
   max-width: 50%;
 }
 
@@ -202,21 +202,29 @@ header {
 }
 
 #product-slider {
-  height: 80vh;
-  width: 70vw;
-  margin: 10%;
-  display: flex;
+  width: 100%;
+  padding-top: 0%;
+  /* display: flex;
   justify-content: center;
+  align-content: center; */
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  margin: 5%;
 }
 
 button {
-  margin-top: 10%;
+  margin: 10%;
   padding: 20px;
   font: 100%;
   background: rgba(255, 255, 255, 1);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border-radius: 50px;
-  border: 1px solid black;
+  border: 2px solid black;
   text-decoration-line: none;
   color: black;
   transition: all 0.5s;
@@ -232,4 +240,113 @@ button:hover {
   top: 0;
   right: 0;
   z-index: 100;
+  padding: 1%;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.form-button {
+  border: 2px solid red;
+  color: red;
+  width: 25%;
+  font-size: 115%;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.form-button:hover {
+  background-color: red;
+  color: white;
+}
+
+.page-header-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 50px;
+  padding: 30px;
+}
+#testimonialPage {
+  display: block;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-size: cover;
+  padding: 7.5rem;
+}
+
+.page-heading {
+  margin-bottom: 8px;
+  font-size: 30px;
+  color: rgb(70, 70, 70);
+}
+
+.page-subtitle {
+  font-size: 48px;
+  color: rgb(237, 45, 52);
+}
+
+.testimonial-img {
+  border-radius: 50%;
+  max-width: 70px;
+  height: 70px;
+  margin: 5%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-message {
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: rgb(70, 70, 70);
+  overflow-wrap: break-word;
+  font-family: "Roboto" sans-serif;
+}
+
+.testimonial-name {
+  font-family: "Roboto" sans-serif;
+  text-align: center;
+  color: rgb(70, 70, 70);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.owl-stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.fas.fa-quote-left {
+  color: #ddd;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
